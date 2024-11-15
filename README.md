@@ -21,3 +21,11 @@ This project requires:
 
 - **Python 3.7+**
 - **aiosmtpd** Python library
+
+Testing / Usage
+```bash
+swaks --to recipient@example.com --from sender@yourdomain.com \
+--auth-user your_username --auth-password your_password \
+--server localhost:1025 --header "Subject: Test Email" --body "This is a test message."
+
+```
